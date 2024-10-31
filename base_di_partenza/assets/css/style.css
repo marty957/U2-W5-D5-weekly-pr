@@ -236,5 +236,11 @@ article > img {
   align-items: center;
 }
 .article_footer h5 + img {
-  margin-right: 50%;
+  margin-right: 54%;
+}
+.article_footer span {
+  margin-inline: 3px;
+  padding: 0.3rem;
+  background-color: rgb(0 0 0 / 4%);
+  border-radius: 10px;
 }
