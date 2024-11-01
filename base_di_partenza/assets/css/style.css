@@ -110,7 +110,7 @@ header {
 }
 .top h1 {
   font-family: "Spectral", "serif";
-  font-size: 6rem;
+  font-size: 4.5rem;
   letter-spacing: -4px;
   font-weight: 400;
 }
@@ -291,6 +291,9 @@ footer {
   flex-direction: column;
   margin-top: 2rem;
   width: 30%;
+  position: sticky;
+  top: 68px;
+  align-self: flex-start;
 }
 footer h6 {
   font-size: 0.6rem;
@@ -345,9 +348,10 @@ footer h6 {
   .mSvg {
     display: none;
   }
+
   .top {
     padding-inline: 1.5rem;
-    margin-block: 2rem;
+    margin: 2rem;
     gap: 0.5rem;
   }
   .top h1 {
@@ -382,6 +386,59 @@ footer h6 {
   .articles {
     width: 95%;
     padding-inline: 1.5rem;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav {
+    padding-inline: 1.5rem;
+  }
+  nav img {
+    margin-right: auto;
+  }
+  .mSvg {
+    right: -64px;
+    width: 38%;
+    flex-shrink: 50;
+  }
+  .top {
+    padding-inline: 1rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-block: 1rem;
+  }
+  .top h1 {
+    font-size: 3.5rem;
+  }
+  .top h2 {
+    font-size: 1.2rem;
+  }
+  .headings {
+    padding-inline: 3rem;
+  }
+  .container-cards {
+    padding-inline: 2rem;
+  }
+  .card {
+    width: 48%;
+  }
+  .card-content {
+    width: 65%;
+  }
+  .biggest_container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .biggest_container footer {
+    order: -1;
+    width: 95%;
+    padding-inline: 2rem;
+  }
+  .articles {
+    width: 99.5%;
+    padding-inline: 2rem;
     margin-top: 5px;
   }
 }
