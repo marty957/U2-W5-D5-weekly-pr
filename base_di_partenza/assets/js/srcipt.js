@@ -16,3 +16,7 @@ window.onscroll = function () {
     buttonNav.classList.remove("green");
   }
 };
+const emme = document.querySelector(".mSvg");
+console.dir(emme);
+const oneemme = document.getElementsByName("g");
+console.dir(oneemme.textContent);

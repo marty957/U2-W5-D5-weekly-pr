@@ -96,6 +96,20 @@ header {
   z-index: -1;
   position: absolute;
 }
+.emme {
+  animation: emmeOnOff 500ms infinite 500ms both;
+}
+.emme2 {
+  animation: emmeOnOff 600ms infinite 300ms both;
+}
+@keyframes emmeOnOff {
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
 /*titolo e paragrafo centrale dell'header*/
 
 .top {
