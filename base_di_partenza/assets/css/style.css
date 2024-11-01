@@ -70,12 +70,15 @@ nav button {
   width: 100%;
   position: sticky;
   top: 0;
+  transition: background-color 600ms;
 }
 .white {
   background-color: rgb(239, 232, 232);
+  transition: background-color 600ms;
 }
 .green {
   background-color: #1a8917;
+  transition: background-color 600ms;
 }
 /*titolo e paragrafo centrale dell'header*/
 
