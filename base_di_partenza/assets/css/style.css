@@ -64,7 +64,19 @@ nav button {
   font-family: "Roboto", serif;
   border: none;
 }
-
+/*animazione del nav*/
+.animated_nav {
+  background-color: #ffc017;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.white {
+  background-color: rgb(239, 232, 232);
+}
+.green {
+  background-color: #1a8917;
+}
 /*titolo e paragrafo centrale dell'header*/
 
 .top {
