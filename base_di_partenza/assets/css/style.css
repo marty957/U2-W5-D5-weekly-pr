@@ -184,7 +184,7 @@ main .headings {
   align-items: flex-start;
   padding-left: 5rem;
   text-align: left;
-  width: 50%;
+  width: 49%;
 }
 
 /*singoli articoli*/
@@ -192,12 +192,16 @@ article {
   display: flex;
   margin-bottom: 1.5rem;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 30px;
 }
 
-article > img {
+.imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.imgs img + img {
   width: 150px;
+  margin-left: 10px;
 }
 .author_article {
   display: flex;
@@ -213,7 +217,9 @@ article > img {
   border-radius: 50%;
   border: 0.4px solid #0000001c;
 }
-
+.article_recap {
+  flex-grow: 21;
+}
 .article_recap h2 {
   font-weight: 900;
   font-size: 1rem;
@@ -235,9 +241,7 @@ article > img {
   width: 100%;
   align-items: center;
 }
-.article_footer h5 + img {
-  margin-right: 54%;
-}
+
 .article_footer span {
   margin-inline: 3px;
   padding: 0.3rem;
