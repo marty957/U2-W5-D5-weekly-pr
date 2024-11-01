@@ -51,6 +51,9 @@ nav a {
   color: #191919;
   cursor: pointer;
 }
+.top_nav a:not(:last-of-type) {
+  flex-shrink: 20;
+}
 
 nav button {
   color: white;
@@ -63,6 +66,7 @@ nav button {
   font-weight: 300;
   font-family: "Roboto", serif;
   border: none;
+  flex-shrink: 0;
 }
 /*animazione del nav*/
 .animated_nav {
@@ -321,4 +325,63 @@ footer h6 {
   font-size: 0.6rem;
   font-weight: 500;
   color: #19191985;
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    padding-inline: 1rem;
+  }
+  .top_nav {
+    padding-left: 1.5rem;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  nav img {
+    margin-right: auto;
+  }
+  nav a:not(:last-of-type) {
+    display: none;
+  }
+  .mSvg {
+    display: none;
+  }
+  .top {
+    padding-inline: 1.5rem;
+    margin-block: 2rem;
+    gap: 0.5rem;
+  }
+  .top h1 {
+    padding-top: 1rem;
+    font-size: 3.5rem;
+  }
+  .top h2 {
+    font-size: 0.9rem;
+  }
+  .top button {
+    margin-bottom: 1rem;
+  }
+  .headings {
+    padding-inline: 1.5rem;
+  }
+  .container-cards {
+    padding-inline: 1.5rem;
+    flex-direction: column;
+  }
+  .card {
+    width: 95%;
+  }
+  .biggest_container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .biggest_container footer {
+    order: -1;
+    width: 95%;
+    padding-inline: 1.5rem;
+  }
+  .articles {
+    width: 95%;
+    padding-inline: 1.5rem;
+    margin-top: 5px;
+  }
 }
