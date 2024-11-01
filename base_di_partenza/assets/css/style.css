@@ -37,7 +37,7 @@ nav {
 }
 
 nav img {
-  width: 110px;
+  width: 140px;
   margin-right: 40%;
 }
 .top_nav {
@@ -55,10 +55,10 @@ nav a {
 nav button {
   color: white;
   background-color: #191919;
-  border-radius: 15px;
+  border-radius: 18px;
   cursor: pointer;
-  padding-block: 0.3rem;
-  padding-inline: 0.5rem;
+  padding-block: 0.6rem;
+  padding-inline: 0.9rem;
   font-size: 0.8rem;
   font-weight: 300;
   font-family: "Roboto", serif;
@@ -80,28 +80,39 @@ nav button {
   background-color: #1a8917;
   transition: background-color 600ms;
 }
+/*integrazione della immagine nell'header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.svg {
+  width: 35%;
+  z-index: -1;
+  position: absolute;
+}
 /*titolo e paragrafo centrale dell'header*/
 
 .top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   padding-inline: 5rem;
   text-align: left;
   font-family: "Roboto", "serif";
-  border: 1px solid black;
+  gap: 1.5rem;
 }
 .top h1 {
   font-family: "Spectral", "serif";
-  font-size: 4.5rem;
+  font-size: 6rem;
   letter-spacing: -4px;
   font-weight: 400;
-  margin-top: 3rem;
 }
 .top h2 {
-  padding-block: 1.2rem;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .top button {
   color: white;
@@ -110,8 +121,8 @@ nav button {
   padding-inline: 2rem;
   padding-block: 0.4rem;
   border: none;
-  margin-bottom: 3rem;
   font-size: 0.8rem;
+  margin-top: 1.5rem;
 }
 /*main section*/
 .biggest_container {
